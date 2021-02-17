@@ -1,15 +1,62 @@
-<!-- ### Exercise
-
-1. Create a simple page having a header, main content, and a footer.
-
-2. Inside the header keep the logo to the left and all the navigation to the right.
-
-3. The header must be fixed at the top of the page.
-
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
-
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
-
-6. After the gallery section footer will come.
-
-7. Take a circular button at the right bottom corner of the page and keep its position fixed. The button should always take to the top of the page once clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Layout</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+<body>
+     <header>
+         <div class="container">
+             <div class="logo">
+               <img class="logoimg" src="assets/media/logo.png" alt="Logo">
+             </div>
+             <nav>
+                 <a href="#">Home</a>
+                 <a href="#">About</a>
+                 <a href="#">Contact</a>
+             </nav>
+         </div>
+     </header>
+     <div id="replica" ></div>
+     <main>
+         <section id="top">
+             <div class="container">
+                <article class="intro">
+                   <div class="col-1">
+                        <h3>The Destello</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos quae at porro quod sint sed similique? Ea quisquam error quos. Quidem nesciunt accusantium eaque exercitationem dolor id dolores veniam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quasi numquam suscipit molestias quidem molestiae vel temporibus quis commodi asperiores a ab mollitia ex? Debitis aperiam quia obcaecati fuga natus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iure minus repellendus fuga mollitia vitae provident! Vitae rerum nihil impedit expedita laudantium aliquid. Ipsa excepturi deleniti repellat modi eligendi repudiandae?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, voluptate cumque cum voluptatem ipsam, dolor fugiat modi laudantium quos dolorum minus ab voluptatibus magnam, commodi obcaecati harum provident corrupti labore.</p>
+                   </div>
+                   <div class="col-2">
+                        <img class="destello" src="assets/media/robin-mathlener-TYKUlVu0H2M-unsplash.jpg" alt="Destello">
+                   </div>
+                </article>
+                <div class="gallery">
+                  <div class="row-1">
+                      <img class="gall" src="assets/media/element5-digital-ck651aCE6LY-unsplash.jpg" alt="Image Here">
+                      <img class="gall" src="assets/media/francesca-tosolini-YNaGwlNbTwY-unsplash.jpg" alt="Image Here">
+                      <img class="gall" src="assets/media/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Image Here">
+                  </div>
+                  <div class="row-2">
+                     <img class="gall" src="assets/media/james-healy-gD62YSirxaU-unsplash.jpg" alt="Image Here">
+                     <img class="gall" src="assets/media/krystal-black-_ur2ee18oPs-unsplash.jpg" alt="Image Here">
+                     <img class="gall" src="assets/media/sandra-rei-O1dDKmhedWc-unsplash.jpg" alt="Image Here">
+                  </div>
+                </div>
+            </div>
+        </section>
+     </main>
+     <footer>
+         <p class="footline">&copy Destello Pvt. Ltd.</p>
+     </footer>
+     <div class="icon">
+         <button>
+             <a href="#top">Back To Top</a>
+         </button>
+     </div>
+</body>
+</html>
