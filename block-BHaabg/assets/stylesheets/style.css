@@ -135,6 +135,9 @@ table {
 }
 
 /*Custom Style*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #fdd2ba;
