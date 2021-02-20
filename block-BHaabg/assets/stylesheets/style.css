@@ -2,165 +2,281 @@
    v2.0 | 20110126
    License: none (public domain)*/
 
-   html, body, div, span, applet, object, iframe,
-   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-   a, abbr, acronym, address, big, cite, code,
-   del, dfn, em, img, ins, kbd, q, s, samp,
-   small, strike, strong, sub, sup, tt, var,
-   b, u, i, center,
-   dl, dt, dd, ol, ul, li,
-   fieldset, form, label, legend,
-   table, caption, tbody, tfoot, thead, tr, th, td,
-   article, aside, canvas, details, embed, 
-   figure, figcaption, footer, header, hgroup, 
-   menu, nav, output, ruby, section, summary,
-   time, mark, audio, video {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       font-size: 100%;
-       font: inherit;
-       vertical-align: baseline;
-   }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-   /* HTML5 display-role reset for older browsers */
-   
-   article, aside, details, figcaption, figure, 
-   footer, header, hgroup, menu, nav, section {
-       display: block;
-   }
-   body {
-       line-height: 1;
-   }
-   ol, ul {
-       list-style: none;
-   }
-   blockquote, q {
-       quotes: none;
-   }
-   blockquote:before, blockquote:after,
-   q:before, q:after {
-       content: '';
-       content: none;
-   }
-   table {
-       border-collapse: collapse;
-       border-spacing: 0;
-   }
-   
-   /*Custom Style*/
+/* HTML5 display-role reset for older browsers */
 
-   body{
-       background-color:#f3d7ca ;
-   }
-   /*Header*/
-   .container{
-       max-width: 1500px;
-       width: 100%;
-       margin: 0 auto;
-       padding:0 32px;
-   }
-   header{
-       height:200px;
-       background-color: #845ec2;
-   }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
-   .logo{
-       width: 100px;
-       padding-top:50px;
-       padding-left: 100px;
+body {
+  line-height: 1;
+}
 
-   }
-   .logoimg{
-    width: 100px;
+ol,
+ul {
+  list-style: none;
 }
-.logo, nav{
-    display:inline-block;
-    vertical-align: middle;
+
+blockquote,
+q {
+  quotes: none;
 }
-a{ 
-    text-decoration: none;
-    font-size: 36px;
-    color: darkturquoise;
-    padding-right:100px;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
-nav{
-    width: calc(100% - 210px);
-    text-align:right;
-    padding-top:50px;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-header{
-    position:fixed;
-    width: 1920px;
-    left:0px;
-    top:0px;
+
+/*Custom Style*/
+
+body {
+  background-color: #fdd2ba;
+  font-family: monospace;
 }
-#replica{
-    height:200px;
-    width:1920px;
+/*Clearfix*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
 }
+.clearfix::after {
+  clear: both;
+}
+
+/*Header*/
+.header {
+  background-color: rgb(252, 111, 55);
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding: 20px;
+  float: left;
+}
+
+.nav {
+  padding-top: 40px;
+  float: right;
+}
+
+a {
+  font-size: 28px;
+  color: rgb(78, 24, 24);
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.logoimg {
+  width: 60px;
+}
+
 /* Introduction*/
-.col-1, .col-2{
-    width:47.5%;
-    height:800px;
-    margin:1%;
-    border:5px solid #c86b85;
-    box-sizing:border-box;
-    display:inline-block;
-    vertical-align: top;
+
+.intro {
+  padding-top: 117.5px;
 }
-.destello{
-    width:100%;
-    height:100%;
+
+.col-1,
+.col-2 {
+  width: 47.5%;
+  height: 800px;
+  margin: 1%;
+  border: 2px solid #ac9fa3;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
 }
-.col-1{
-    padding:5%;
-    background-color: #e6a4b4;
-    text-align: center;
+
+.destello {
+  width: 100%;
+  height: 100%;
 }
-h3{
-    font-size: 36px;
-    font-style: italic;
-    font-weight: bold;
-    color: cyan;
-    margin:5%;
+
+.col-1 {
+  padding: 5%;
+  background-color: #eb794d;
+  text-align: center;
 }
-p{
-    font-family: monospace;
-    font-size: 24px;
+
+h3 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bold;
+  color: cyan;
+  margin: 5%;
 }
+
+p {
+  font-family: monospace;
+  font-size: 24px;
+}
+
 /*Gallery*/
-.gallery{
-    max-width:1920px;
+.row-1,
+.row-2 {
+  padding-top: 25px;
+  text-align: center;
 }
-.row-1, .row-2{
-    width:1920px;
-    height:620px ;
-    padding-top: 5px;
+
+.gall {
+  width: 620px;
+  height: 500px;
+  border: 3px solid #9c9899;
+  border-radius: 12px;
 }
-.gall{
-    width: 620px;
-    height:600px;
-    border:5px solid #c86b85;
-    
+
+.row-1 img,
+.row-2 img {
+  width: 31.5%;
 }
- footer{
-   width: 1920px;
-   height:200px;
-   text-align: center;
-   vertical-align: center;
-   background-color:#845ec2;
+
+/*Footer*/
+
+.footer {
+  background-color: rgb(241, 100, 19);
+  margin-top: 25px;
 }
-button{
-    width:330px;
-    height:100px;
-    position:fixed;
-    right:10px;
-    bottom:10px;
+
+.footline {
+  float: left;
+  margin: 40px 0;
+  color: black;
+  font-size: 28px;
 }
-.row-1 img{
-    width: 25%;
+
+/*Back To Top*/
+.icon {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(247, 85, 21);
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
 }
-.row-2 img{
-    width: 25%;
+
+#button {
+  color: rgb(49, 3, 3);
+  display: inline-block;
+  margin-top: 22%;
+  font-size: 50px;
+  margin-left: 1px;
 }
