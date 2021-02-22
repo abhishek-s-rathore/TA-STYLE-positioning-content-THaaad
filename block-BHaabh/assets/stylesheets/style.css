@@ -1,4 +1,7 @@
 /*Custom Styles*/
+body {
+  font-family: "Raleway", sans-serif;
+}
 * {
   box-sizing: border-box;
 }
@@ -94,7 +97,7 @@ h6 {
 .more {
   background-color: rgb(83, 133, 193);
   color: #fff;
-  padding: 6px;
+  padding: 10px 20px;
 }
 
 /*Members*/
@@ -159,6 +162,7 @@ h6 {
   display: inline-block;
   margin: 30px 40px;
   text-align: left;
+  vertical-align: top;
 }
 
 .sample_name {
@@ -173,4 +177,35 @@ h6 {
   opacity: 0.5;
   line-height: 1.7;
   padding: 20px 0;
+}
+
+/*Footer*/
+.footer {
+  font-size: 0;
+}
+
+.border {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 50px 0;
+  text-align: left;
+}
+.copyright,
+.contacts {
+  display: inline-block;
+  vertical-align: middle;
+}
+.copyright {
+  font-size: 16px;
+  opacity: 0.5;
+  text-align: left;
+}
+a i {
+  font-size: 16px;
+  color: rgb(83, 133, 193);
+  margin-right: 20px;
+}
+
+.contacts {
+  width: calc(100% - 163.5px);
+  text-align: right;
 }
